@@ -395,7 +395,7 @@ int Date::operator-(const Date& date)
 	}
 	
 	//Lastly, numDays contains the number of days that have been kept track of per year, while
-	//daysInBetweeenDates has kept track of how many days there are between the dates, excluding the years.
+	//daysInBetweenDates has kept track of how many days there are between the dates, excluding the years.
 	//The operator makes final comparisons between the dates' months and days to determine whether these days
 	//(daysInBetweenDates) should be added or subtracted from the total.
 	if (date1.month < date2.month)
@@ -409,7 +409,7 @@ int Date::operator-(const Date& date)
 		else
 			numDays -= daysInBetweenDates;
 	}
-	//The absolute value is calculated and returned.
+	//The absolute value is calculated and returned if needed.
 	if (numDays < 0)
 		numDays *= -1;
 
