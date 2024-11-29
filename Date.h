@@ -23,6 +23,7 @@ private:
 	static string months[NUM_MONTHS];
 	int days[NUM_MONTHS];
 public:
+
 	//Accessor Functions
 
 	//Preconditions: Function expects a value to exist in the month member, value must be an appropriate month value (1-12)
