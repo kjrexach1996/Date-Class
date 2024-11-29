@@ -336,7 +336,7 @@ int Date::operator-(const Date& date)
 
 	//Date1's year is checked first. Days are added depending where the date lies on this first year.
 	//If the beginning date lies on a leap year and lies on or before Feb. 29, an extra day must be included in the total.
-	//If the end date lies on a leap year and lies on or after Feb. 29, an extra date must be included in the total
+	//If the end date lies on a leap year and lies on or after Feb. 29, an extra date must be included in the total.
 	if (date1.year != date2.year)
 		{
 		//Beginning date
@@ -394,7 +394,7 @@ int Date::operator-(const Date& date)
 			daysInBetweenDates -= daysValueDifference;
 	}
 	
-	//Lastly, numDays contains the number of days that have been kept tracked of per year, while
+	//Lastly, numDays contains the number of days that have been kept track of per year, while
 	//daysInBetweeenDates has kept track of how many days there are between the dates, excluding the years.
 	//The operator makes final comparisons between the dates' months and days to determine whether these days
 	//(daysInBetweenDates) should be added or subtracted from the total.
